@@ -1,0 +1,61 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fundamentos de desarrollo de videojuegos"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#800080"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="192dp"
+        android:layout_height="192dp"
+        android:layout_above="@+id/button_motion_event"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="101dp"
+        android:layout_marginTop="116dp"
+        android:layout_marginEnd="102dp"
+        android:layout_marginBottom="34dp"
+        android:src="@drawable/imagen" />
+
+    <Button
+        android:id="@+id/button_motion_event"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Motion Event"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/button_sensors"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sensors"
+        android:layout_below="@id/button_motion_event"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/instructionTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Esta aplicación permite visualizar los datos que se obtendrían de un sensor grip"
+        android:textSize="18sp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:gravity="center_horizontal" />
+
+</RelativeLayout>

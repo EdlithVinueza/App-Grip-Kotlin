@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/sensorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sensores"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="150dp" />
+
+    <TextView
+        android:id="@+id/accelerometerTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Acelerómetro: "
+        android:textSize="18sp"
+        android:layout_below="@id/titleTextView"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/gyroscopeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Giroscopio: "
+        android:textSize="18sp"
+        android:layout_below="@id/accelerometerTextView"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/forceTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fuerza: "
+        android:textSize="18sp"
+        android:layout_below="@id/gyroscopeTextView"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/proximityTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Proximidad: "
+        android:textSize="18sp"
+        android:layout_below="@id/forceTextView"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/instructionTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Si mueves el teléfono, el color de la pantalla cambiará dependiendo de la fuerza. Si acercas la mano, la pantalla se tornará magenta"
+        android:textSize="18sp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:gravity="center_horizontal" />
+
+</RelativeLayout>
